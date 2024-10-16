@@ -1,0 +1,851 @@
+/* STILOS GENERALES */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blank: #ffffff;
+    --main: #00A3E0;
+    --secd: #FF6600;
+    --third: #ddd3d4;
+    --dark: #222222;
+}
+
+body {
+    background-color: var(--blank);
+    font-family: 'Rubik';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------------------------- */
+/* MOBILE */
+.nav-head {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+nav {
+    background-color: var(--dark);
+    z-index: 99;
+    width: 100%;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    width: 100%;
+    padding: 1em;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+nav ul li{
+    width: 100%;
+}
+
+ul li a{
+    width: inherit;
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em;
+}
+
+
+.active li a{
+    display: block;
+}
+
+.item {
+    margin: 0em 1em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--blank);
+}
+
+.item:hover {
+    background-color: var(--main);
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: var(--blank);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    border-radius: 5px;
+}
+
+.logo {
+    margin: 0.5em;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .a {
+    font-weight: bolder;
+    color: var(--blank);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.logo .a:hover{
+    color: var(--main);
+}
+
+
+.logo .img-logo {
+    width: 2.5em;
+    margin: 0.2em;
+}
+
+.img-logo:hover{
+    width: 2.6em;
+}
+
+nav ul.active {
+    padding: 1em;
+    height: auto;
+}
+
+/* MENU HAMBURGUESA */
+
+header .hamburger {
+    color: var(--blank);
+    width: 10vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0.5em;
+    margin-left: 1em;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
+
+header .hamburger .bar {
+    width: 35px;
+    height: 5px;
+    background-color: var(--blank);
+    margin: 2px 0;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+
+.btn-rounded {
+    width: auto;
+    padding: 10px 15px;
+    background: var(--main);
+    border-color: solid 1px var(--main);
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5em;
+    margin-right: 1em;
+}
+
+.btn-rounded:hover {
+    background: var(--secd);
+    color: var(--blank);
+}
+
+/* HTML */
+.title {
+    color: var(--dark);
+    border-bottom: 4px solid var(--main);
+    text-align: center;
+    margin: 0.5em 0;
+    font-size: 30px;
+}
+
+.title2 {
+    color: var(--dark);
+    text-align: center;
+    margin: 0.5em 0;
+    font-size: 25px;
+}
+
+.text {
+    color: var(--dark);
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.text2 {
+    color: var(--blank);
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* WELCOME */
+.welcome-section {
+    padding: 4em 2em;
+    background-color: var(--blank);
+    text-align: center;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.welcome-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-image:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text p {
+    max-width: 600px;
+    font-size: 1.3em;
+    color: var(--dark);
+}
+
+.welcome-text p {
+    line-height: 1.6;
+}
+
+
+/* BENEFICIOS */
+.benefits-section {
+    background-color: var(--blank);
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.benefits-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-card {
+    background-color: var(--main);
+    padding: 2em;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.5em;
+}
+
+.benefit-title {
+    font-size: 1.8em;
+    color: var(--dark);
+    margin-bottom: 1em;
+}
+
+.benefit-text {
+    color: var(--blank);
+    font-size: 1.5em;
+}
+
+/* CARCATERISTICAS */
+.caract-container {
+    padding: 4em 0.5em;
+    background-color: var(--blank);
+    text-align: center;
+}
+
+.caract-container h2 {
+    font-size: 2em;
+    color: var(--dark);
+    margin-bottom: 1em;
+}
+
+.carcat-container-galery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.galery-img {
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.galery-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.galery-img:hover img {
+    transform: scale(1.1);
+}
+
+.galery-img:hover .text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.galery figure {
+    margin: 0;
+    position: relative;
+}
+
+.galery .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--blank);
+    padding: 0.5em;
+    font-size: 2em;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    border-radius: 0 0 8px 8px;
+}
+
+/* SELLS O ESTADISTICAS */
+.statistics {
+    background-color: var(--main);
+    width: 100%;
+    padding: 4em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat {
+    margin: 20px;
+    padding: 30px;
+    background-color: var(--blank);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.counter {
+    font-size: 3em;
+    color: var(--secd);
+    font-weight: bold;
+}
+
+.stat p {
+    font-size: 1.2em;
+    color: var(--dark);
+    margin-top: 10px;
+}
+
+
+.title {
+    font-size: 2.5em;
+    color: var(--dark);
+    margin-bottom: 30px;
+}
+
+.stat {
+    margin: 20px 0;
+}
+
+.counter {
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--main);
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.mm {
+    font-size: 2em;
+    vertical-align: super;
+    color: var(--main);
+}
+
+.stat p {
+    font-size: 1.2em;
+    color: var(--secd);
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* RESEÑAS */
+
+.reviews {
+    text-align: center;
+    padding: 4em 0.5em;
+    position: relative;
+    width: 95vw;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: 30vh;
+    box-sizing: border-box;
+    padding: 1em;
+    background-color: var(--blank);
+}
+
+.avatar img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.stars {
+    color: gold;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    height: 80%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.093);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.225);
+}
+
+.prev {
+    left: 10px;
+    border-radius: 10px;
+}
+
+.next {
+    right: 10px;
+    border-radius: 10px;
+}
+
+.text3{
+    color: var(--dark);
+    font-size: 22px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* CTA */
+.cta-section {
+    padding: 4em 2em;
+    background-color: var(--main);
+    text-align: center;
+    color: var(--blank);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200%;
+    transform: translateX(-50%);
+    animation: pulsate 5s infinite;
+    z-index: 1;
+}
+
+.cta-text {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    z-index: 2;
+    position: relative;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    z-index: 2;
+    position: relative;
+}
+
+.cta-input {
+    padding: 1em 1.5em;
+    border-radius: 30px;
+    border: none;
+    font-size: 1em;
+    width: 80vw;
+    max-width: 100%;
+}
+
+.cta-button {
+    width: 80vw;
+    background-color: var(--secd);
+    color: var(--blank);
+    padding: 1em 2em;
+    border-radius: 30px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--dark);
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+    transform: scale(1);
+}
+
+.cta-input:focus {
+    outline: 2px solid var(--secd);
+}
+
+/* Ventanita pop */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; 
+    z-index: 1000; /* Asegura el modal esté por encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--blank); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: var(--dark);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: var(--secd);
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--dark);
+    color: var(--blank);
+    padding: 2em 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 1em;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 1em;
+    color: var(--main);
+    font-size: 22px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Redes sociales - NO ME SALEN LOS ICONOS!!!!! */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons li a {
+    font-size: 24px;
+    color: var(--blank);
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: var(--main);
+}
+
+/* Copyright */
+.footer-bottom {
+    background-color: var(--dark);
+    color: var(--blank);
+    padding: 1em;
+    font-size: 14px;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* TABLET */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100vh; 
+        width: 45vw; 
+        padding: 2em 4em;
+        padding-left: 3em; 
+        margin-top: 4em;
+        background-color: var(--dark); 
+        position: fixed; 
+        top: 0;
+        left: 0;
+        z-index: 100;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%); 
+    }
+
+    nav ul.active {
+        z-index: 95;
+        transform: translateX(0); /* Mostrar el menú cuando está activo */
+        height: 100vh;
+    }
+
+    nav ul li {
+        width: 100%; 
+        margin-bottom: 1em; 
+    }
+
+    nav ul li a {
+        font-size: 25px; 
+        text-align: left; 
+        padding: 0.5em 1em;
+        width: 100%; 
+        color: var(--blank); 
+    }
+
+    /* Ajuste del logo */
+    .logo {
+        width: 100%;
+        justify-content: flex-start; 
+        margin-left: 1em;
+        z-index: 100;
+    }
+
+    .logo a {
+        font-size: 25px; 
+        color: var(--blank);
+    }
+
+    .logo img {
+        max-width: 2em; 
+        margin-right: 0.5em;
+        z-index: 100;
+    }
+
+    .btn-rounded {
+        font-size: 14px;
+    }
+
+    /* Ajuste del menú hamburguesa */
+
+    header .hamburger {
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; /* Justificar el menú hamburguesa a la izquierda */
+        cursor: pointer;
+        width: auto;
+        margin: 1em;
+    }
+
+    header .hamburger .bar {
+        width: 30px;
+        height: 4px;
+        margin: 3px 0;
+        background-color: var(--blank);
+    }
+    .welcome-text p {
+        font-size: 1.8em;
+    }
+
+    .btn-rounded {
+        padding: 1em 3em;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+/* LAPTOP */
+
+@media (min-width: 1024px){
+
+    .logo, .hamburger .bar{
+        z-index: 101;
+    }
+    /* Ajuste de la barra de navegación */
+    nav ul {
+        margin-top: 4em;
+        width: 27vw; 
+        padding: 2em 2em;
+        padding-left: 3em; /* Espaciado interno para mayor estética */
+        z-index: 100;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav ul.active {
+        padding: 0 2.5em;
+        z-index: 99;
+        transform: translateX(0); /* Mostrar el menú cuando está activo */
+        height: 100vh;
+    }
+
+    .item{
+        text-align: left;
+    }
+
+    .welcome-container{
+        flex-direction: row-reverse;
+    }
+
+    .benefits-wrapper, .carcat-container-galery, .statistics-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .statistics-container div{
+        margin: 1em;
+    }
+
+    .galery-img {
+        width: 35vw;
+    }
+
+    .galery{
+        flex-direction: row;
+        overflow: auto;
+    }
+
+    .cta-button{
+        width: 40%;
+    }
+}

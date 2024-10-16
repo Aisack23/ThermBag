@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--     FONTAWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--     CSS LINK -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!--   FAVICON   -->
+    <link rel="shortcut icon" href="/assets/img/logo-b.png" type="image/png">
+    <title>THERMBAG</title>
+</head>
+
+<body>
+    <!-- NAV - BARRA DE NAVEGACION -->
+    <header>
+        <nav>
+            <div class="nav-head">
+                <!-- Botón de menú hamburguesa -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="logo">
+                    <a href="#home"><img class="img-logo" src="assets/img/logo-b.png" alt=""></a>
+                    <a class="a" href="#home">THERMBAG</a>
+                </div>
+                <div class="login">
+                    <a href="#cta" class="button btn-rounded">CTA</a>
+                </div>
+            </div>
+            <ul id="nav-links" class="nav-links">
+                <!-- ELEMENTOS MENU: LOGO Y ENLACES -->
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="#benefit">Beneficios</a></li>
+                <li class="item"><a href="#caract">Características</a></li>
+                <li class="item"><a href="#stat">Estadísticas</a></li>
+                <li class="item"><a href="#review">Reseñas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- WELCOME SECRION -->
+    <main class="page">
+        <section class="welcome-section" id="home">
+            <h2 class="title">Bienvenidos</h2>
+            <div class="welcome-container">
+                <div class="welcome-image">
+                    <img src="/assets/img/b0.jpg" alt="Bienvenidos">
+                </div>
+                <div class="welcome-text">
+                    <p class="text">Te presentamos las THERMBAGS <br> <i><b>Manten la frescura y el calor a tu
+                                alcance</b></i> con nuestro producto de alta gama, bolsastermicas de alta calidad para
+                        facilitar tu vida diaria.
+                        se combertiran en compañeras fiables en paseos, excursiones, o simplemente para conservar
+                        alimentos frescos en la oficina.</p>
+                </div>
+            </div>
+        </section>
+        <!-- BENEFIT SECTION -->
+        <section class="benefits-section" id="benefit">
+            <h2 class="title">Nuestros Beneficios</h2>
+            <div class="benefits-wrapper">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <img src="/assets/img/benefit/servicio-al-cliente.png" alt="Servicio al cliente">
+                    </div>
+                    <h3 class="benefit-title">Alta calidad</h3>
+                    <p class="benefit-text">La mejor calidad la encuentras en nuestro producto, hecho de: polietileno y
+                        neopreno.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <img src="/assets/img/benefit/signo-de-dolar.png" alt="Precios accesibles">
+                    </div>
+                    <h3 class="benefit-title">Adaptabilidad</h3>
+                    <p class="benefit-text">Son productos ligeros, de fácil envío y estéticamente flexibles, aparte de
+                        ser monetariamente accesibles.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <img src="/assets/img/benefit/planta.png" alt="Sostenibilidad">
+                    </div>
+                    <h3 class="benefit-title">Ecofriendly</h3>
+                    <p class="benefit-text">Nos preocupamos por el medio ambiente, pensando en que nuestras Thermbags
+                        sean reutilizables.</p>
+                </div>
+            </div>
+        </section>
+        <!-- CARACTERISTIC SECTION -->
+        <section class="caract-container" id="caract">
+            <h2 class="title">Características</h2>
+            <div class="carcat-container-galery">
+                <div class="galery">
+                    <div class="galery-img">
+                        <figure>
+                            <img src="/assets/img/b1.jpg">
+                            <p class="text">Colores personalizados para tus envíos</p>
+                        </figure>
+                    </div>
+                    <div class="galery-img">
+                        <figure>
+                            <img src="/assets/img/b4.jpg">
+                            <p class="text">Capa especial de aislamiento, que permite mantener una temperatura interior
+                                estable.</p>
+                        </figure>
+                    </div>
+                    <div class="galery-img">
+                        <figure>
+                            <img src="/assets/img/b3.jpg">
+                            <p class="text">Impermeable, segura y fácil de limpiar</p>
+                        </figure>
+                    </div>
+                    <div class="galery-img">
+                        <figure>
+                            <img src="/assets/img/b2.png">
+                            <p class="text">Posee cierre de cremallera aprueba de fugas</p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ESTATISTIC SECTION -->
+        <section class="statistics" id="stat">
+            <h2 class="title">Estadísticas</h2>
+            <div class="statistics-container">
+                <div class="stat">
+                    <span class="counter" data-target="2000">0</span>
+                    <p>Millones de bolsas térmicas al día en el mundo</p>
+                </div>
+                <div class="stat">
+                    <span class="counter" data-target="110">0</span>
+                    <p>Bolsas térmicas que salen con un solo día</p>
+                </div>
+                <div class="stat">
+                    <span class="counter" data-target="1">0</span>
+                    <p>Consumidor en el ranking mundial. El Salvador</p>
+                </div>
+                <div class="stat">
+                    <span class="counter" data-target="22">0</span><span class="mm">MM</span>
+                    <p>Salvadoreños que usan una bolsa térmica</p>
+                </div>
+            </div>
+        </section>
+        <!-- REVIEW SECTION -->
+        <section class="reviews" id="review">
+            <h2 class="title">Lo que dicen nuestros clientes</h2>
+            <div class="slider-container">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="slider">
+                    <div class="review">
+                        <div class="avatar">
+                            <img src="/assets/img/user.jpg" alt="Cliente 1">
+                        </div>
+                        <div class="content">
+                            <h3>Emily Yosley</h3>
+                            <p class="text3">"Muy espaciosa, y la comida se mantiene caliente y bien protegida"</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="avatar">
+                            <img src="/assets/img/user.jpg" alt="Cliente 2">
+                        </div>
+                        <div class="content">
+                            <h3>Alex Morales</h3>
+                            <p class="text3">"Buen producto bien diseñado y de buena calidad, los envases se adaptan
+                                perfectamente a la bolsa"</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="avatar">
+                            <img src="/assets/img/user.jpg" alt="Cliente 3">
+                        </div>
+                        <div class="content">
+                            <h3>Abraham Flores</h3>
+                            <p class="text3">"Tiene muy buen tamaño para los almuerzos, el interior de la bolsa es
+                                sencillo de limpiar"</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="avatar">
+                            <img src="/assets/img/user.jpg" alt="Cliente 4">
+                        </div>
+                        <div class="content">
+                            <h3>Diego Iraheta</h3>
+                            <p class="text3">"Es visualmente bonita, bastante amplia para las salidas, y es facil de
+                                transportar"</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        <!-- CTA SECTION -->
+        <section class="cta-section" id="cta">
+            <h2 class="title">¿Quieres saber más?</h2>
+            <p class="cta-text">Suscríbete a nuestro boletín y recibe las últimas noticias y promociones directamente en
+                tu bandeja de entrada.</p>
+            <div class="cta-container">
+                <input class="cta-input" pattern=".+@gmail\.com" placeholder="correo@ejemplo.com" type="email">
+                <a href="#" class="cta-button" id="subscribeBtn">Suscribirme</a>
+            </div>
+        </section>
+
+        <!-- Modal Window -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <i style="font-size: 50px; color: var(--main); margin-bottom: 0.5em;" class="fa-solid fa-check"></i>
+                <p>¡Gracias por suscribirte! Hemos recibido tu información.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p>Correo: emily@isaac.com</p>
+                <p>Tel: +503 456 789</p>
+                <p>Horario: Lun - Vie, 8:00- 13:00</p>
+            </div>
+
+            <div class="footer-section address">
+                <h3>Dirección</h3>
+                <p>San Salvador, El Salvador</p>
+                <p>Código Postal: 503</p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Redes</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Isaac. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>
